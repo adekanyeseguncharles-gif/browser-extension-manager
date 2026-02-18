@@ -1,222 +1,246 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: hsl(227, 75%, 14%);
-        }
-        .navigation{
-            display: flex;
-            justify-content: start;
-        }
-        .gen-nav{
-            background-color: hsl(226, 25%, 17%);
-            height: 60px;
-            width: 1000px;
-            border-radius: 15px;
-            margin-left: 300px;
-            padding: 1px 20px 1px 20px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-        .sun{
-            background-color: hsl(225, 23%, 24%);
-            height: 40px;
-            width: 40px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        .sun-logo{
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        .logo{
-            height: 50px;
-        }
-        .extent{
-            color: white;
-            font-family: "Noto Sans", sans-serif;
-        }
-        .sec-gen-nav{
-            display: flex;
-            justify-content: space-between;
-            margin-left: 300px;
-        }
-        .sec-body{
-            margin-right: 320px;
-            margin-top: 15px;
-        }
-        .all{
-            padding: 10px 20px;
-            background-color: hsl(226, 25%, 17%);
-            border: 1px solid;
-            border-color: white;
-            border-radius: 20px;
-            color: white;
-            font-size: 15px;
-            transition: 0.15s;
-        }
-        .all:hover{
-            background-color: hsl(3, 86%, 64%);
-            border: none;
-        }
-        .active{
-            padding: 10px 20px;
-            background-color: hsl(226, 25%, 17%);
-            border: 1px solid;
-            border-color: white;
-            border-radius: 20px;
-            color: white;
-            font-size: 15px;
-            transition: 0.15s;
-        }
-        .active:hover{
-            background-color: hsl(3, 86%, 64%);
-            border: none;
-        }
-        .inactive{
-            padding: 10px 20px;
-            background-color: hsl(226, 25%, 17%);
-            border: 1px solid;
-            border-color: white;
-            border-radius: 20px;
-            color: white;
-            font-size: 15px;
-            transition: 0.15s;
-        }
-        .inactive:hover{
-            background-color: hsl(3, 86%, 64%);
-            border: none;
-        }
-        .sec-extent{
-            color: white;
-            font-family: "Noto Sans", sans-serif;
-        }
-        .third-container{
-            background-color: hsl(225, 23%, 24%);
-            height: 180px;
-            width: 350px;
-            margin-left: 300px;
-            border-radius: 20px;
-            border: 1px solid;
-            border-color: white;
-        }
-        .third-nav{
-            display: inline-block;
-        }
-        .third-list{
-            display: inline-block;
-            font-family: "Noto Sans", sans-serif;
-            margin-bottom: 20px;
-        }
-        .devlens{
-            color: white;
-            margin-left: 10px;
-        }
-        .quickly{
-            color: hsl(0, 0%, 78%);
-            font-size: 13px;
-            margin-left: 10px;
-            margin-top: -8px;
-        }
-        .image-dev{
-            margin-bottom: 10px;
-            margin-left: 20px;
-        }
-        .remove{
-            padding: 5px 15px;
-            background-color: hsl(225, 23%, 24%);;
-            border: 1px solid;
-            border-color: white;
-            border-radius: 20px;
-            color: white;
-            font-size: 12px;
-            transition: 0.15s;
-            margin-left: 20px;
-            margin-top: 20px;
-        }
-        .remove:hover{
-            background-color: hsl(3, 86%, 64%);
-            border: none;
-        }
-        .main-grid{
-            display: grid;
-            grid-template-columns: 360px 360px 1fr;
-            row-gap: 10px;
-        }
-        .toggle {
-        width: 44px;
-        height: 24px;
-        background: #475569;
-        border-radius: 999px;
-        position: relative;
-        cursor: pointer;
-        margin-left: 270px;
-        margin-top: -30px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extensions</title>
+
+<style>
+   body{
+    background-color: hsl(227, 75%, 14%);
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* ===== NAVIGATION ===== */
+.gen-nav{
+    background-color: hsl(226, 25%, 17%);
+    height: 60px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    height: 40px;
+}
+
+.extent{
+    color: white;
+}
+
+/* ===== SECOND NAV ===== */
+.sec-gen-nav{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.sec-body{
+    display: flex;
+    gap: 10px;
+
+}
+
+/* BUTTONS */
+.all, .active, .inactive{
+    padding: 8px 18px;
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.all:hover, .active:hover, .inactive:hover{
+    background-color: hsl(3, 86%, 64%);
+    border: none;
+}
+
+/* ===== GRID FIX ===== */
+.main-grid{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* ===== CARD ===== */
+.third-container{
+    background-color: hsl(225, 23%, 24%);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sec-extent{
+   color: white;
+}
+.third-nav{
+    margin-bottom: 10px;
+}
+
+.third-list{
+    margin-bottom: 15px;
+}
+
+.devlens{
+    color: white;
+    margin: 5px 0;
+}
+
+.quickly{
+    color: hsl(0, 0%, 78%);
+    font-size: 13px;
+}
+
+/* REMOVE + TOGGLE ALIGN FIX */
+.third-container > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove{
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.remove:hover{
+    background-color: hsl(3, 86%, 64%);
+    border: none;
+}
+
+/* TOGGLE */
+.toggle {
+    width: 44px;
+    height: 24px;
+    background: #475569;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.toggle.on {
+    background: #fb7185;
+}
+
+.toggle.on::after {
+    left: 23px;
+}
+
+/* ========================= */
+/* ===== MEDIA QUERY ======= */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 900px){
+    .main-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+    .sec-gen-nav{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
     }
 
-    .toggle::after {
-        content: "";
-        width: 18px;
-        height: 18px;
-        background: white;
-        border-radius: 50%;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        transition: 0.3s;
+    .main-grid{
+        grid-template-columns: 1fr;
     }
+}
 
-    .toggle.on {
-        background: #fb7185;
-    }
-
-    .toggle.on::after {
-        left: 23px;
-    }
-    </style>
+</style>
 </head>
+
 <body>
-    <div class="gen-nav">
-        <div class="navigation">
-            <img src="FEM-images/images/logooo.png" alt="" class="logo"> 
-            <h3 class="extent">Extensions</h3>
+
+<div class="gen-nav">
+    <div class="navigation">
+        <img src="FEM-images/images/logooo.png" class="logo">
+        <h3 class="extent">Extensions</h3>
+    </div>
+    <div class="sun">
+        <img src="FEM-images/images/icon-sun.svg">
+    </div>
+</div>
+
+<div class="sec-gen-nav">
+    <h1 class="sec-extent">Extension List</h1>
+    <div class="sec-body">
+        <button class="all">All</button>
+        <button class="active">Active</button>
+        <button class="inactive">Inactive</button>
+    </div>
+</div>
+
+<div class="main-grid">
+
+    <!-- CARD EXAMPLE -->
+    <div class="third-container">
+        <div>
+            <img src="FEM-images/images/logo-devlens.svg">
+            <h3 class="devlens">DevLens</h3>
+            <p class="quickly">
+                Quickly inspect page layouts and visualize element boundaries
+            </p>
         </div>
-        <div class="sun">
-            <img src="FEM-images/images/icon-sun.svg" alt="" class="sun-logo">
+        <div class="card-footer">
+            <button class="remove">Remove</button>
+            <div class="toggle on"></div>
         </div>
     </div>
-    <div class="sec-gen-nav">
-        <div>
-            <h1 class="sec-extent">Extension List</h1>
-        </div>
-        <div class="sec-body">
-            <button class="all">All</button>
-            <button class="active">Active</button>
-            <button class="inactive">Inactive</button>
-        </div>
-    </div>
-    <div class="main-grid">
+
+    <!-- You can duplicate the card above for others -->
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-devlens.svg" alt="" class="image-dev">
-        </div>
-        <div class="third-list">
-           <h3 class="devlens">DevLens</h3>
-           <p class="quickly">Quickly inspect page layouts and <br>visualize element boundaries</p>
-        </div>
-        <div>
-           <button class="remove">Remove</button>
-           <div class="toggle on"></div>
-        </div>
-     </div>
-     <div class="third-container">
-        <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-style-spy.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-style-spy.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">StyleSpy</h3>
@@ -229,7 +253,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-speed-boost.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-speed-boost.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">SpeedBoost</h3>
@@ -242,7 +266,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-json-wizard.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-json-wizard.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">JSONWizard</h3>           <p class="quickly">Format, validates, and pretiffies<br>JSON reponses in-browser</p>
@@ -254,7 +278,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-tab-master-pro.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-tab-master-pro.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">TabMaster pro</h3>
@@ -267,7 +291,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-viewport-buddy.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-viewport-buddy.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">ViewportBuddy</h3>
@@ -280,7 +304,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-markup-notes.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-markup-notes.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">Markup Notes</h3>
@@ -293,7 +317,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-grid-guides.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-grid-guides.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">GridGuide</h3>
@@ -306,7 +330,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-palette-picker.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-palette-picker.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">Palette Picker</h3>
@@ -319,7 +343,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-link-checker.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-link-checker.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">LinkChecker</h3>
@@ -332,7 +356,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-dom-snapshot.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-dom-snapshot.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">DOM Snapshot</h3>
@@ -345,7 +369,7 @@
      </div>
      <div class="third-container">
         <div class="third-nav">
-           <img src="/Frontend mentor/FEM images/images/logo-console-plus.svg" alt="" class="image-dev">
+           <img src="FEM-images/images/logo-console-plus.svg" alt="" class="image-dev">
         </div>
         <div class="third-list">
            <h3 class="devlens">ConsolePlus</h3>
@@ -356,6 +380,7 @@
            <div class="toggle on"></div>
         </div>
      </div>
-    </div>
+</div>
+
 </body>
 </html>
